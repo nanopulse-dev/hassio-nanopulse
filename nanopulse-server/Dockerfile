@@ -19,7 +19,7 @@ RUN \
   set -x && \
   apk add --no-cache --virtual .build-dependencies git && \
   cd /nanopulse-server && \
-  git clone -b devel https://github.com/nanopulse-dev/nanopulse-profiles.git profiles && \
+  git clone https://github.com/nanopulse-dev/nanopulse-profiles.git profiles && \
   apk del --no-cache  .build-dependencies
 
 COPY run.sh /
