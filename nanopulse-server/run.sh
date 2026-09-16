@@ -27,5 +27,7 @@ fi
 
 export KEYPAIR__PUBLIC_KEY="$(bashio::config 'public_key')"
 export KEYPAIR__SECRET_KEY="$(bashio::config 'secret_key')"
+export GEOLOCATION__WIFI_BACKEND="$(bashio::config 'geolocation.wifi_backend')"
+export GEOLOCATION__GOOGLE__API_KEY="$(bashio::config 'geolocation.google_api_key')"
 
 /nanopulse-server/nanopulse-server -c /nanopulse-server/config -p /nanopulse-server/profiles

@@ -16,6 +16,12 @@ arch:
 options:
   public_key: ""
   secret_key: ""
+  geolocation:
+    wifi_backend: "beacondb"
+    google_api_key: ""
 schema:
   public_key: str
   secret_key: password
+  geolocation:
+    wifi_backend: "list(beacondb|google)"
+    google_api_key: password
