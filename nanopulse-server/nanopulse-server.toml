@@ -1,0 +1,8 @@
+[database]
+path = "sqlite:///data/nanopulse.sqlite"
+
+[api]
+bind = "0.0.0.0:3030"
+
+[integration.home_assistant]
+enabled = true
